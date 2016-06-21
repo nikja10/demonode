@@ -11,7 +11,7 @@ var server = supertest.agent("http://localhost:4000");
 
  it("Done", function(done)
  {
-server.end(function(err.res){
+server.end(function(err,res){
 res.status.should.equal(200);
 done();
 }) ; 
